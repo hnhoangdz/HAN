@@ -1,4 +1,3 @@
-import os
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
@@ -6,10 +5,7 @@ from src.utils import get_max_lengths
 from src.dataset import MyDataset
 from src.HAN_net import HANnet
 import argparse
-import shutil
-import numpy as np
 from tqdm import tqdm, trange
-from collections import Counter
 import time
 
 

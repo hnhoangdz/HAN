@@ -3,7 +3,6 @@ import sys
 import csv
 # csv.field_size_limit(sys.maxsize)
 from nltk.tokenize import sent_tokenize, word_tokenize
-from sklearn.metrics import accuracy_score, log_loss, confusion_matrix
 import numpy as np
 
 def mul_matrix(input, weight, bias=False, is_context=False):
