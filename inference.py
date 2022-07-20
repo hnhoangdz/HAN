@@ -103,13 +103,13 @@ if __name__ == '__main__':
     
     documents, labels = get_test_documents(args['data_path'])
     a_doc = documents[11]
-    print(a_doc)
+    print('e.g: ', a_doc)
     a_label = labels[11]
     
     max_length_word, max_length_sent = get_max_lengths(args['data_path'])
 
     feature = doc_tokenizer(a_doc, args['word2vec_path'], max_length_sent, max_length_word)
-    print(feature.shape)
+    print('shape: ', feature.shape)
     labels = ['World', 'Sports', 'Business', 'Sci/Tech']
     
     prob, label = predict(feature, model, labels)

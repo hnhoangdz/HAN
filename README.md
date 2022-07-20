@@ -5,3 +5,9 @@
 - This implementation was contructed and based on from [repo](https://github.com/uvipen/Hierarchical-attention-networks-pytorch). However, I made this implementation easier to ``train`` and ``inference`` with [AG News Classification Dataset](https://www.kaggle.com/datasets/amananandrai/ag-news-classification-dataset).
 
 - To ``train`` and ``inference``, please download small English vocabulary [glove.6B.50d](https://www.kaggle.com/datasets/watts2/glove6b50dtxt) and push it into __data__ folder.
+
+## Predict a document
+```bash
+pip install -r requirements.txt  # install
+python inference.py
+```
